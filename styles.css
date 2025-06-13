@@ -1,0 +1,259 @@
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(60, 139, 230), #013220);
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    background-image: url('Image/0000.png'); /* Фоновое изображение */
+    background-size: cover; /* Изображение на весь блок */
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.text-block {
+    background-color: white; /* Белый фон для текста */
+    padding: 20px; /* Отступы внутри текстового блока */
+    border-radius: 8px; /* Закругленные углы для текстового блока */
+    color: black; /* Цвет текста черный для контраста */
+}
+.text-block h1 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Отступ снизу заголовка */
+}
+
+.text-block p {
+    font-size: 18px;
+}
+/* Боковое меню */
+.sidebar {
+    background: linear-gradient(135deg, rgb(60, 139, 230), #808080);
+    color: white;
+    width: 152px;
+    padding: 10px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+/* Основной контент */
+.header-container {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов */
+    justify-content: center; /* Горизонтальное выравнивание элементов */
+    background-color: rgb(125, 64, 247);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста внутри контейнера */
+}
+
+.header-container h1 {
+    color: white; /* Цвет текста заголовка */
+    margin: 0; /* Убираем отступы */
+    font-size: 36px; /* Размер шрифта заголовка */
+    letter-spacing: 1.5px; /* Пробел между буквами */
+}
+
+
+.logo {
+    width: 100px;
+    height: 78px;
+    margin-right: 20px;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    align-items: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    margin: 15px; /* Отступы вокруг каждого изображения */
+}
+
+.image-block {
+    width: 70%; /* Уменьшаем ширину блока изображения */
+    max-height: 500px; /* Максимальная высота изображения */
+    overflow: hidden;
+}
+
+.image-block img {
+    width: 100%; /* Заполнение по ширине блока */
+    height: auto; /* Пропорциональная высота */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-block {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+    width: 78vw; /* Блок на всю ширину экрана */
+    max-width: none; /* Убираем ограничение ширины */
+    text-align: justify; /* Выравнивание текста по левому краю */
+    margin-left: -10px; /* Выравнивание по краю экрана */
+    margin-right: -10px; /* Убираем отступы по правому краю */
+}
+
+.text-block h2 {
+    font-size: 36px;
+    color: rgb(60, 139, 230); /* Цвет заголовка сочетается с основным цветом */
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff7b00; /* Оранжевая линия под заголовком */
+}
+
+.text-block p {
+    font-size: 18px;
+    line-height: 1; /* Одинарный межстрочный интервал */
+    color: #555; /* Более мягкий серый цвет для текста */
+    margin-bottom: 20px; /* Отступы между абзацами */
+}
+
+.text-block p:last-child {
+    margin-bottom: 0; /* Убираем отступ у последнего абзаца */
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffbf00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar ul li a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    footer {
+        text-align: left;
+        padding: 20px;
+    }
+}
